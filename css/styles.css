@@ -563,12 +563,8 @@ a {
 
 .footer-post {
   display: flex;
+  align-items: center;
   gap: 24px;
-}
-
-.footer-post-icon {
-  position: relative;
-  gap: 16px;
 }
 
 .footer-title {
@@ -600,6 +596,7 @@ a {
 }
 
 .footer-btn {
+  position: relative;
   min-width: 165px;
   font-weight: 500;
   font-size: 16px;
@@ -667,6 +664,8 @@ a {
   background-color: var(--green);
 }
 
+/* -------------MODAL------------- */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -706,6 +705,8 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: block;
+  transition: var(--transition);
+  transition-property: background-color;
 }
 
 .modal-close:hover,
@@ -717,6 +718,8 @@ a {
   width: 8px;
   height: 8px;
   fill: #000000;
+  transition: var(--transition);
+  transition-property: fill;
 }
 
 .modal-close:hover > .close-icon,
@@ -809,7 +812,8 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  padding: 0 -38px 0 38px;
+  padding-left: 38px;
+  box-sizing: border-box;
   transition: border var(--transition);
 }
 
