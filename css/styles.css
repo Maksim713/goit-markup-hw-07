@@ -63,7 +63,7 @@ a {
 }
 
 .container {
-  max-width: 1128px;
+  /* max-width: 1128px; */
 
   padding: 0 15px;
   margin: 0 auto;
@@ -219,23 +219,25 @@ a {
 /* -------------SECTION LIGHT------------- */
 
 .light {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .light-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px;
 }
 
 .light-item {
-  flex-basis: calc((100% - 72px) / 4);
+  width: 100%;
+  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .light-item-icon {
-  background-color: var(--light);
+  display: none;
+  /* background-color: var(--light);
   padding: 24px 100px;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 .light-icon {
@@ -243,15 +245,18 @@ a {
 }
 
 .light-title {
-  margin-top: 8px;
+  /* margin-top: 8px; */
   margin-bottom: 8px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  color: var(--dark-blue);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .light-after-title {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -903,4 +908,71 @@ a {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--primary-dark);
+}
+
+/* -----------------------MEDIA----------------------- */
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 426px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 736px;
+  }
+
+  .light-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .light-item {
+    max-width: 356px;
+    width: calc((100%-30px) / 2);
+  }
+
+  .light-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1128px;
+  }
+
+  .light {
+    padding: 120px 0;
+  }
+
+  .light-list {
+    gap: 24px;
+  }
+
+  .light-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .light-item-icon {
+    display: block;
+    background-color: var(--light);
+    padding: 24px 100px;
+    border-radius: 4px;
+  }
+
+  .light-title {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .light-after-title {
+    font-weight: 400;
+  }
 }
