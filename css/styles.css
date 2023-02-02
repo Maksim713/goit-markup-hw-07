@@ -46,7 +46,7 @@ p {
 ul,
 ol {
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
 
   list-style: none;
 }
@@ -55,6 +55,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 a {
@@ -65,7 +66,7 @@ a {
 .container {
   /* max-width: 1128px; */
 
-  padding: 0 15px;
+  /* padding: 0 15px; */
   margin: 0 auto;
 }
 
@@ -378,7 +379,7 @@ a {
 /* ---------------SECTION CLIENTS--------------- */
 
 .clients {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .clients-title {
   margin-bottom: 72px;
@@ -388,16 +389,24 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--dark-blue);
 }
+/* data-aos="flip-down" - для заголовка анимация. */
+
 .clients-list {
+  /* width: 396px; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  column-gap: 16px;
+  row-gap: 72px;
+  /* gap: 72px; */
 }
 
 .clients-item {
-  width: 168px;
+  max-width: 190px;
   height: 88px;
+  flex-basis: calc((100%-16px) / 2);
 }
 
 .clients-link {
@@ -418,7 +427,7 @@ a {
 }
 
 .clients-icon {
-  width: 104px;
+  width: 110px;
   height: 56px;
   fill: currentColor;
 }
@@ -921,8 +930,9 @@ a {
 @media screen and (min-width: 768px) {
   .container {
     width: 736px;
+    padding: 0 15px;
   }
-
+  /* --------------SECTION LIGHT--------------  */
   .light-list {
     column-gap: 24px;
     row-gap: 72px;
@@ -930,7 +940,7 @@ a {
 
   .light-item {
     max-width: 356px;
-    width: calc((100%-30px) / 2);
+    flex-basis: calc((100%-30px) / 2);
   }
 
   .light-title {
@@ -939,13 +949,26 @@ a {
     text-transform: capitalize;
     text-align: left;
   }
+  /* --------------SECTION CLIENTS--------------  */
+  .clients-list {
+    column-gap: 24px;
+  }
+
+  .clients-item {
+    max-width: 168px;
+    flex-basis: calc((100%-24px) / 3);
+  }
+
+  .clients-icon {
+    width: 104px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1128px;
   }
-
+  /* --------------SECTION LIGHT--------------  */
   .light {
     padding: 120px 0;
   }
@@ -974,5 +997,18 @@ a {
 
   .light-after-title {
     font-weight: 400;
+  }
+
+  /* --------------SECTION CLIENTS--------------  */
+
+  .clients {
+    padding: 120px 0;
+  }
+  .clients-list {
+    /* width: 1128px;
+    gap: 24px; */
+  }
+  .clients-item {
+    flex-basis: calc((100%-24px) / 6);
   }
 }
