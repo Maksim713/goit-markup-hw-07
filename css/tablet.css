@@ -41,4 +41,11 @@
     gap: 24px;
     row-gap: 64px;
   }
+  /* --------------FOOTER--------------  */
+  .footer-info {
+    margin-right: 24px;
+  }
+  .footer-media-title {
+    text-align: left;
+  }
 }

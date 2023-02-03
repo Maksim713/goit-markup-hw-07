@@ -49,4 +49,27 @@
   .team {
     padding: 120px 0;
   }
+  /* --------------FOOTER--------------  */
+  .line {
+    flex-wrap: nowrap;
+  }
+
+  .footer-info {
+    margin-bottom: 0;
+    margin-right: 120px;
+  }
+  .footer-logos {
+    justify-content: left;
+  }
+  .footer-title {
+    text-align: left;
+  }
+  .footer-media {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+
+  .footer-post {
+    flex-wrap: nowrap;
+  }
 }

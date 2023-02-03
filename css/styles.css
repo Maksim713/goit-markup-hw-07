@@ -555,43 +555,60 @@ a {
 /* -------------FOOTER------------- */
 
 .footer {
-  padding: 100px 0;
+  /* width: 100%; */
+  padding: 96px 0;
   background-color: var(--dark-blue);
 }
 
 .footer-info {
   width: 264px;
-  margin-right: 120px;
+  margin-bottom: 72px;
+  /* margin-right: 120px; */
 }
 
 .line {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .footer-logos {
   margin-bottom: 16px;
+  justify-content: center;
 }
 
 .logos {
   color: var(--light);
 }
 
-.footer-post {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.footer-title {
+.footer-logos-title {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-gray);
 }
 
+.footer-post {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-title,
+.footer-media-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--light-gray);
+}
+
 .footer-media {
-  margin-right: 80px;
+  margin-bottom: 72px;
+  /* margin-right: 80px; */
 }
 
 .title {
