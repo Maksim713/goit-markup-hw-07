@@ -1,0 +1,52 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1128px;
+  }
+  /* --------------SECTION LIGHT--------------  */
+  .light {
+    padding: 120px 0;
+  }
+
+  .light-list {
+    gap: 24px;
+  }
+
+  .light-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .light-item-icon {
+    display: block;
+    background-color: var(--light);
+    padding: 24px 100px;
+    border-radius: 4px;
+  }
+
+  .light-title {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .light-after-title {
+    font-weight: 400;
+  }
+
+  /* --------------SECTION CLIENTS--------------  */
+
+  .clients {
+    padding: 120px 0;
+  }
+  .clients-list {
+    /* width: 1128px;
+    gap: 24px; */
+  }
+  .clients-item {
+    flex-basis: calc((100%-24px) / 6);
+  }
+  /* --------------SECTION TEAM--------------  */
+  .team {
+    padding: 120px 0;
+  }
+}

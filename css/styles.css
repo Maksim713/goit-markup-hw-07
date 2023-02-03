@@ -251,7 +251,6 @@ a {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: var(--dark-blue);
   text-align: center;
   text-transform: capitalize;
 }
@@ -291,7 +290,8 @@ a {
 /* -------------SECTION TEAM------------- */
 
 .team {
-  padding: 120px 0;
+  padding-top: 96px;
+  padding-bottom: 128px;
   background-color: var(--light);
 }
 
@@ -304,16 +304,19 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+/* data-aos="zoom-in-down" - анимация заголовка. */
 
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  justify-content: center;
+  gap: 72px;
 }
 
 .team-item {
   background-color: var(--white);
   width: 264px;
+  /* width: 100%; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -325,7 +328,7 @@ a {
 }
 
 .team-card-name {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
@@ -389,7 +392,6 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--dark-blue);
 }
 /* data-aos="flip-down" - для заголовка анимация. */
 
@@ -917,98 +919,4 @@ a {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--primary-dark);
-}
-
-/* -----------------------MEDIA----------------------- */
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 426px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 736px;
-    padding: 0 15px;
-  }
-  /* --------------SECTION LIGHT--------------  */
-  .light-list {
-    column-gap: 24px;
-    row-gap: 72px;
-  }
-
-  .light-item {
-    max-width: 356px;
-    flex-basis: calc((100%-30px) / 2);
-  }
-
-  .light-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-transform: capitalize;
-    text-align: left;
-  }
-  /* --------------SECTION CLIENTS--------------  */
-  .clients-list {
-    column-gap: 24px;
-  }
-
-  .clients-item {
-    max-width: 168px;
-    flex-basis: calc((100%-24px) / 3);
-  }
-
-  .clients-icon {
-    width: 104px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1128px;
-  }
-  /* --------------SECTION LIGHT--------------  */
-  .light {
-    padding: 120px 0;
-  }
-
-  .light-list {
-    gap: 24px;
-  }
-
-  .light-item {
-    flex-basis: calc((100% - 72px) / 4);
-  }
-
-  .light-item-icon {
-    display: block;
-    background-color: var(--light);
-    padding: 24px 100px;
-    border-radius: 4px;
-  }
-
-  .light-title {
-    margin-top: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-
-  .light-after-title {
-    font-weight: 400;
-  }
-
-  /* --------------SECTION CLIENTS--------------  */
-
-  .clients {
-    padding: 120px 0;
-  }
-  .clients-list {
-    /* width: 1128px;
-    gap: 24px; */
-  }
-  .clients-item {
-    flex-basis: calc((100%-24px) / 6);
-  }
 }

@@ -1,0 +1,44 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 736px;
+    padding: 0 15px;
+  }
+  /* --------------SECTION LIGHT--------------  */
+  .light-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .light-item {
+    max-width: 356px;
+    flex-basis: calc((100%-30px) / 2);
+  }
+
+  .light-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: left;
+  }
+  /* --------------SECTION CLIENTS--------------  */
+  .clients-list {
+    column-gap: 24px;
+  }
+
+  .clients-item {
+    max-width: 168px;
+    flex-basis: calc((100%-24px) / 3);
+  }
+
+  .clients-icon {
+    width: 104px;
+  }
+  /* --------------SECTION TEAM--------------  */
+  .team {
+    padding-bottom: 104px;
+  }
+  .team-list {
+    gap: 24px;
+    row-gap: 64px;
+  }
+}
