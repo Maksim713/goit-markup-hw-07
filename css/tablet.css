@@ -1,8 +1,40 @@
 @media screen and (min-width: 768px) {
+  ul {
+    margin: 0;
+  }
   .container {
     width: 736px;
     padding: 0 15px;
   }
+  /* --------------HEADER--------------  */
+  .header-navigation {
+    margin-left: 123px;
+    margin-right: auto;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-list-contact {
+    display: block;
+    justify-content: right;
+  }
+  .header-mailto,
+  .header-tel {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+  .header-mailto {
+    margin-bottom: 4px;
+  }
+  /* --------------SECTION HERO--------------  */
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 40px;
+  }
+
   /* --------------SECTION LIGHT--------------  */
   .light-list {
     column-gap: 24px;

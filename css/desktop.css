@@ -2,6 +2,22 @@
   .container {
     width: 1128px;
   }
+  /* --------------HEADER--------------  */
+  .header-navigation {
+    margin-left: 77px;
+    margin-right: auto;
+  }
+  .header-list,
+  .header-list-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  /* --------------SECTION HERO--------------  */
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
   /* --------------SECTION LIGHT--------------  */
   .light {
     padding: 120px 0;
@@ -32,7 +48,33 @@
   .light-after-title {
     font-weight: 400;
   }
+  /* -------------SECTION WORK------------- */
 
+  .work {
+    padding-top: 0;
+    padding-bottom: 120px;
+  }
+
+  .work-title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  /* --------------SECTION TEAM--------------  */
+  .team {
+    padding: 120px 0;
+  }
   /* --------------SECTION CLIENTS--------------  */
 
   .clients {
@@ -45,10 +87,7 @@
   .clients-item {
     flex-basis: calc((100%-24px) / 6);
   }
-  /* --------------SECTION TEAM--------------  */
-  .team {
-    padding: 120px 0;
-  }
+
   /* --------------FOOTER--------------  */
   .line {
     flex-wrap: nowrap;
