@@ -40,6 +40,11 @@
     margin: 0 300px 48px;
   }
 
+  /* --------------MODAL--------------  */
+  .backdrop {
+    top: 80;
+  }
+
   /* --------------SECTION LIGHT--------------  */
   .light {
     padding: 120px 0;
