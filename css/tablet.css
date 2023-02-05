@@ -3,8 +3,7 @@
     margin: 0;
   }
   .container {
-    width: 736px;
-    padding: 0 15px;
+    width: 768px;
   }
   /* --------------HEADER--------------  */
   .header-navigation {
@@ -28,7 +27,22 @@
   .header-mailto {
     margin-bottom: 4px;
   }
+  .menu-open {
+    display: none;
+  }
   /* --------------SECTION HERO--------------  */
+  .hero {
+    background-image: var(--bg-gradient), url(../images/hero-bg-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--bg-gradient), url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;

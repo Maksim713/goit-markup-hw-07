@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .container {
     width: 1128px;
   }
@@ -13,9 +13,31 @@
     flex-wrap: wrap;
     gap: 40px;
   }
+  .header-mailto,
+  .header-tel {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
   /* --------------SECTION HERO--------------  */
+  .hero {
+    background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
+    height: 226px;
+    padding: 187px 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--bg-gradient), url(../images/hero-bg-2x.jpg);
+    }
+  }
+
   .hero-title {
-    margin-bottom: 48px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin: 0 300px 48px;
   }
 
   /* --------------SECTION LIGHT--------------  */
@@ -51,6 +73,7 @@
   /* -------------SECTION WORK------------- */
 
   .work {
+    display: block;
     padding-top: 0;
     padding-bottom: 120px;
   }
