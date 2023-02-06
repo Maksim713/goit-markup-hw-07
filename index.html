@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,7 +18,14 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
@@ -141,7 +148,9 @@
       <!-- SECTION HERO -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title" data-aos="zoom-in">
+            Effective Solutions for Your Business
+          </h1>
           <button class="hero-btn" type="button" data-modal-open>
             Order Service
           </button>
@@ -250,7 +259,7 @@
       <!-- SECTION TEAM -->
       <section class="team">
         <div class="container">
-          <h2 class="team-title">Our Team</h2>
+          <h2 class="team-title" data-aos="zoom-in-down">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
@@ -439,7 +448,7 @@
       <!-- SECTION CLIENTS -->
       <section class="clients">
         <div class="container">
-          <h2 class="clients-title">Customers</h2>
+          <h2 class="clients-title" data-aos="flip-down">Customers</h2>
           <ul class="clients-list list">
             <li class="clients-item">
               <a href="" class="clients-link link">
@@ -541,14 +550,12 @@
               class="footer-input"
               placeholder="Email"
             />
-            <div class="footer-post-icon">
-              <button type="submit" class="footer-btn">
-                Subscribe
-                <svg class="footer-icon-btn">
-                  <use href="./images/icons.svg#icon-Frame"></use>
-                </svg>
-              </button>
-            </div>
+            <button type="submit" class="footer-btn">
+              Subscribe
+              <svg class="footer-icon-btn">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -623,7 +630,7 @@
     <script>
       AOS.init();
     </script>
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

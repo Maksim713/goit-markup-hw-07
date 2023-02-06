@@ -1,6 +1,7 @@
 @media screen and (min-width: 1158px) {
   .container {
     width: 1128px;
+    padding: 0;
   }
   /* --------------HEADER--------------  */
   .header-navigation {
@@ -22,7 +23,7 @@
   /* --------------SECTION HERO--------------  */
   .hero {
     background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
-    height: 226px;
+    height: 600px;
     padding: 187px 0;
   }
 
@@ -108,16 +109,14 @@
   .clients {
     padding: 120px 0;
   }
-  .clients-list {
-    /* width: 1128px;
-    gap: 24px; */
-  }
+
   .clients-item {
     flex-basis: calc((100%-24px) / 6);
   }
 
   /* --------------FOOTER--------------  */
   .line {
+    max-width: 1128px;
     flex-wrap: nowrap;
   }
 

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --dark-blue: #2e2f42;
   --dark-gray: #434455;
@@ -123,9 +127,6 @@ a {
 .header-list,
 .header-list-contact {
   display: none;
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 40px; */
 }
 
 .header-item {
@@ -241,7 +242,7 @@ a {
 
 .mob-menu-soc-list {
   display: flex;
-  gap: 56px;
+  gap: 35px;
 }
 
 .mob-menu-soc-icon {
@@ -261,7 +262,6 @@ a {
   padding: 112px 0;
   text-align: center;
   max-width: 1440px;
-  /* height: 600px; Не спрацьовує, незнаю причини. */
   margin: 0 auto;
 }
 
@@ -274,7 +274,6 @@ a {
 }
 
 .hero-title {
-  /* width: 496px; */
   margin: 0 auto 72px auto;
   font-weight: 700;
   font-size: 36px;
@@ -295,7 +294,7 @@ a {
   letter-spacing: 0.04em;
   color: var(--white);
   cursor: pointer;
-
+  margin: auto;
   padding: 16px 32px;
   background-color: var(--primary);
   border: 0px;
@@ -324,14 +323,10 @@ a {
 
 .light-item {
   width: 100%;
-  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .light-item-icon {
   display: none;
-  /* background-color: var(--light);
-  padding: 24px 100px;
-  border-radius: 4px; */
 }
 
 .light-icon {
@@ -339,7 +334,6 @@ a {
 }
 
 .light-title {
-  /* margin-top: 8px; */
   margin-bottom: 8px;
   font-size: 36px;
   line-height: 1.11;
@@ -360,26 +354,7 @@ a {
 
 .work {
   display: none;
-  /* padding-top: 0;
-  padding-bottom: 120px; */
 }
-
-/* .work-title {
-  margin-bottom: 72px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-align: center;
-} */
-
-/* .work-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-} */
 
 /* -------------SECTION TEAM------------- */
 
@@ -410,7 +385,6 @@ a {
 .team-item {
   background-color: var(--white);
   width: 264px;
-  /* width: 100%; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -490,13 +464,11 @@ a {
 /* data-aos="flip-down" - для заголовка анимация. */
 
 .clients-list {
-  /* width: 396px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 16px;
   row-gap: 72px;
-  /* gap: 72px; */
 }
 
 .clients-item {
@@ -649,20 +621,16 @@ a {
 /* -------------FOOTER------------- */
 
 .footer {
-  /* width: 100%; */
   padding: 96px 0;
   background-color: var(--dark-blue);
 }
 
 .footer-info {
   width: 264px;
-  margin-bottom: 72px;
-  /* margin-right: 120px; */
+  margin: 0 auto 72px;
 }
 
 .line {
-  width: 100%;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -702,7 +670,6 @@ a {
 
 .footer-media {
   margin-bottom: 72px;
-  /* margin-right: 80px; */
 }
 
 .title {
@@ -806,8 +773,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 360px;
-  min-height: 536px;
+  /* width: 360px; */
+  /* min-height: 536px; */
   background-color: var(--pale-gray);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -815,6 +782,12 @@ a {
   transform: translate(-50%, -50%) scaleY(1);
   transition: var(--transition);
   padding: 72px 24px 24px;
+
+  width: 95%;
+  max-width: 392px;
+  height: 95%;
+  max-height: 586px;
+  overflow: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -953,8 +926,6 @@ a {
 .modal-input:focus + .person-icon,
 .modal-input:focus + .contact-icon {
   fill: var(--primary);
-  /* transition: var(--transition);
-  transition-property: fill; */
 }
 
 .person-icon {

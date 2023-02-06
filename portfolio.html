@@ -48,7 +48,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-list list">
+        <ul class="header-list-contact list">
           <li class="header-item">
             <a class="header-mailto link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -60,6 +60,83 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-open-icon">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="modal-close" data-menu-close>
+              <svg class="close-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-navigation">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="mob-menu-link link mob-current"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="#" class="mob-menu-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-list-contact list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-mailto link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-soc-list list">
+              <li class="team-soc-item">
+                <a href="#" class="team-soc-link link">
+                  <svg class="mob-menu-soc-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a href="#" class="team-soc-link link">
+                  <svg class="mob-menu-soc-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a href="#" class="team-soc-link link">
+                  <svg class="mob-menu-soc-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a href="#" class="team-soc-link link">
+                  <svg class="mob-menu-soc-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -362,5 +439,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

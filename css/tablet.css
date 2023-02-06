@@ -7,7 +7,7 @@
   }
   /* --------------HEADER--------------  */
   .header-navigation {
-    margin-left: 123px;
+    margin-left: 120px;
     margin-right: auto;
   }
   .header-list {
@@ -87,9 +87,33 @@
     gap: 24px;
     row-gap: 64px;
   }
+  /* --------------FILTER--------------  */
+  .filter-item-img {
+    width: 356px;
+  }
+
+  .filter-list-card {
+    row-gap: 72px;
+  }
   /* --------------FOOTER--------------  */
+  .line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 555px;
+  }
+
   .footer-info {
-    margin-right: 24px;
+    margin: 0 24px 72px 0;
+  }
+  .footer-media-post {
+    display: block;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .footer-post {
+    display: flex;
   }
   .footer-media-title {
     text-align: left;
