@@ -4,6 +4,9 @@
     padding: 0;
   }
   /* --------------HEADER--------------  */
+  .header {
+    padding: 24px 0;
+  }
   .header-navigation {
     margin-left: 77px;
     margin-right: auto;
@@ -39,11 +42,6 @@
     font-size: 56px;
     line-height: 1.07;
     margin: 0 300px 48px;
-  }
-
-  /* --------------MODAL--------------  */
-  .backdrop {
-    top: 80;
   }
 
   /* --------------SECTION LIGHT--------------  */

@@ -563,67 +563,69 @@
     <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
-          <svg class="close-icon">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
-          <label class="modal-label">
-            <span class="input-text">Name</span>
-            <span class="input-wrap">
-              <input name="user-name" type="text" class="modal-input" />
-              <svg class="person-icon">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal-label">
-            <span class="input-text2">Phone</span>
-            <span class="input-wrap">
-              <input name="user-phone" type="text" class="modal-input" />
-              <svg class="contact-icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal-label">
-            <span class="input-text2">Email</span>
-            <span class="input-wrap">
-              <input name="user-email" type="text" class="modal-input" />
-              <svg class="contact-icon">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </span>
-          </label>
-          <label for="user-text" class="input-text2">Comment </label>
-          <textarea
-            name="user-text"
-            id="user-text"
-            class="modal-comment"
-            placeholder="Text input"
-          ></textarea>
-          <span class="modal-checkbox">
-            <input
-              type="checkbox"
-              name="privacy"
-              id="privacy"
-              value="true"
-              class="input-check visually-hidden"
-            />
-            <label for="privacy" class="check-text">
-              <span>
-                <svg class="vector-icon">
-                  <use href="./images/icons.svg#icon-Vector"></use>
+        <div class="modal-content">
+          <button type="button" class="modal-close" data-modal-close>
+            <svg class="close-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="modal-title">Leave your contacts and we will call you back</p>
+          <form class="modal-form">
+            <label class="modal-label">
+              <span class="input-text">Name</span>
+              <span class="input-wrap">
+                <input name="user-name" type="text" class="modal-input" />
+                <svg class="person-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="#" class="modal-ref">Privacy Policy</a></label
-            >
-          </span>
-          <button type="submit" class="modal-btn">Send</button>
-        </form>
+            </label>
+            <label class="modal-label">
+              <span class="input-text2">Phone</span>
+              <span class="input-wrap">
+                <input name="user-phone" type="text" class="modal-input" />
+                <svg class="contact-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-label">
+              <span class="input-text2">Email</span>
+              <span class="input-wrap">
+                <input name="user-email" type="text" class="modal-input" />
+                <svg class="contact-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </span>
+            </label>
+            <label for="user-text" class="input-text2">Comment </label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-comment"
+              placeholder="Text input"
+            ></textarea>
+            <span class="modal-checkbox">
+              <input
+                type="checkbox"
+                name="privacy"
+                id="privacy"
+                value="true"
+                class="input-check visually-hidden"
+              />
+              <label for="privacy" class="check-text">
+                <span>
+                  <svg class="vector-icon">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="#" class="modal-ref">Privacy Policy</a></label
+              >
+            </span>
+            <button type="submit" class="modal-btn">Send</button>
+          </form>
+        </div c>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

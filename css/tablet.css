@@ -47,6 +47,7 @@
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 40px;
+    width: 496px;
   }
 
   /* --------------SECTION LIGHT--------------  */
@@ -99,8 +100,8 @@
   .line {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 555px;
+    justify-content: flex-start;
+    max-width: 533px;
   }
 
   .footer-info {
@@ -117,5 +118,9 @@
   }
   .footer-media-title {
     text-align: left;
+  }
+  /* --------------MODAL--------------  */
+  .modal-comment {
+    width: 340px;
   }
 }
