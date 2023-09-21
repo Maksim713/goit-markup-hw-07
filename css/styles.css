@@ -638,7 +638,6 @@ a {
 
 .footer-logos {
   margin-bottom: 16px;
-  justify-content: flex-start;
 }
 
 .logos {
@@ -666,6 +665,13 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-gray);
+}
+
+.footer-logos,
+.footer-title,
+.footer-media-title {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-media {
@@ -784,32 +790,9 @@ a {
 
   width: 95%;
   max-width: 392px;
-  height: auto; /* Замените "height" на "auto" */
-  max-height: 95%; /* Замените "max-height" на "95%" */
-  overflow-y: auto; /* Включаем полосу прокрутки, если контент выходит за пределы модального окна */
+  height: auto;
+  overflow-y: auto;
 }
-
-/* .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: var(--pale-gray);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transform: translate(-50%, -50%) scaleY(1);
-  transition: var(--transition);
-  padding: 72px 24px 24px;
-
-  width: 95%;
-  max-width: 392px;
-  height: 95%;
-  max-height: 586px;
-} */
-
-/* .modal-content {
-  overflow-y: scroll;
-} */
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);

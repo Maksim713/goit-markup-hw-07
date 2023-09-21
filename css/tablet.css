@@ -107,6 +107,11 @@
   .footer-info {
     margin: 0 24px 72px 0;
   }
+  .footer-logos,
+  .footer-title,
+  .footer-media-title {
+    justify-content: flex-start;
+  }
   .footer-media-post {
     display: block;
   }
