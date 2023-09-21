@@ -74,7 +74,7 @@
 
   .clients-item {
     max-width: 168px;
-    flex-basis: calc((100%-24px) / 3);
+    flex-basis: calc((100% - 24px) / 3);
   }
 
   .clients-icon {
