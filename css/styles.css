@@ -791,6 +791,7 @@ a {
   width: 95%;
   max-width: 392px;
   height: auto;
+  max-height: 95%;
   overflow-y: auto;
 }
 
