@@ -86,7 +86,7 @@ a {
 /* -------------HEADER------------- */
 
 .header {
-  padding: 24px 0;
+  padding: 17px 0;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -105,7 +105,6 @@ a {
   font-size: 18px;
   line-height: 1.17;
   display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary);
@@ -639,7 +638,7 @@ a {
 
 .footer-logos {
   margin-bottom: 16px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .logos {
@@ -666,7 +665,6 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--light-gray);
 }
 
@@ -764,7 +762,8 @@ a {
 
 .backdrop {
   position: fixed;
-  top: 96;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
@@ -775,8 +774,25 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* width: 360px; */
-  /* min-height: 536px; */
+  background-color: var(--pale-gray);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+  padding: 72px 24px 24px;
+
+  width: 95%;
+  max-width: 392px;
+  height: auto; /* Замените "height" на "auto" */
+  max-height: 95%; /* Замените "max-height" на "95%" */
+  overflow-y: auto; /* Включаем полосу прокрутки, если контент выходит за пределы модального окна */
+}
+
+/* .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   background-color: var(--pale-gray);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -789,8 +805,11 @@ a {
   max-width: 392px;
   height: 95%;
   max-height: 586px;
-  overflow: scroll;
-}
+} */
+
+/* .modal-content {
+  overflow-y: scroll;
+} */
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
@@ -953,7 +972,7 @@ a {
 }
 
 .modal-comment {
-  width: 340px;
+  width: 256px;
   height: 108px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
